@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="董巾航的机器人项目与开源工作。激光惯导 SLAM、无人清扫车与机器人定位。">
+  <meta name="description" content="董巾航的机器人项目与开源贡献，关注激光惯导 SLAM、定位与多传感器融合。">
   <title>董巾航 · SLAM 与机器人定位</title><link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -10,7 +10,7 @@
 <header class="header wrap"><a class="brand" href="./">JINHANG DONG<span>董巾航</span></a><nav aria-label="主导航"><a href="#projects">项目</a><a href="#open-source">开源</a><a href="resume.html">简历 ↗</a></nav></header>
 <main id="main">
 <section class="hero wrap">
-  <div><p class="eyebrow">LIDAR SLAM · ROBOTICS</p><h1>让机器人<br>知道自己<br><span>身在何处。</span></h1><p class="intro">我是董巾航，电子科技大学硕士在读，主要从事激光惯导 SLAM 方向的工作。关注机器人定位、多传感器融合，以及算法在真实平台上的运行。</p><div class="actions"><a class="button" href="#projects">查看机器人项目 <span>↓</span></a><a class="text-link" href="https://github.com/dddd-jh">GitHub →</a></div></div>
+  <div><p class="eyebrow">LIDAR SLAM · ROBOTICS</p><h1>董巾航<br><span>激光惯导 SLAM</span></h1><p class="intro">电子科技大学硕士在读，关注机器人定位、多传感器融合与点云处理。</p><div class="actions"><a class="button" href="resume.html">查看简历 <span>↗</span></a><a class="text-link" href="https://github.com/dddd-jh">GitHub →</a></div></div>
   <figure class="scene"><svg viewBox="0 0 440 390" role="img" aria-labelledby="scene-title scene-desc">
     <title id="scene-title">机器人定位与地图示意</title><desc id="scene-desc">机器人在网格地图上的运动轨迹与激光观测。图形是概念示意，不代表实验结果。</desc>
     <defs><pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M 32 0 L 0 0 0 32" fill="none" stroke="#d6e0dc" stroke-width=".7"/></pattern></defs>
@@ -23,17 +23,20 @@
     <circle cx="30" cy="352" r="3" fill="#567c70"/><text x="40" y="356" fill="#425b51" font-family="sans-serif" font-size="10">地图观测</text>
   </svg><figcaption>机器人定位示意，不代表实测轨迹或性能结果。</figcaption></figure>
 </section>
-<div class="facts wrap"><div><span>工作方向</span><strong>激光惯导 SLAM · 机器人定位</strong></div><div><span>公开项目</span><strong>无人清扫车 · 征程 6 平台</strong></div><div><span>已有工程环境</span><strong>Ubuntu 20.04 · ROS 1</strong></div></div>
+<div class="facts wrap"><div><span>研究方向</span><strong>激光惯导 SLAM · 机器人定位</strong></div><div><span>工程环境</span><strong>C++ / Python · Ubuntu · ROS 1</strong></div><div><span>公开项目</span><strong>无人清扫车 · 征程 6 平台</strong></div></div>
 <section id="projects" class="section wrap">
-  <div class="section-head"><p class="eyebrow">01 / ROBOTICS PROJECT</p><h2>无人清扫车：定位与系统协同。</h2></div>
-  <article class="paper"><div class="paper-label">HORIZON<br><strong>J6</strong></div><div><h3>面向智慧环卫场景的国产系统无人清扫车关键技术攻关</h3><p>2026 年度中国青年科技创新“揭榜挂帅”擂台赛团队项目，基于已有无人车平台，面向地平线征程 6 系列开展建图定位、导航与系统集成。</p><p><strong>我的工作主线：SLAM。</strong> 导航、运动规划等模块由团队其他成员负责。系统进度与测试状态以团队公开工作安排为准。</p><p class="small"><a href="https://github.com/Doribelove/autolabor-robot-nav/tree/robot_j6m_ws">团队源码 ↗</a> · <a href="https://github.com/Doribelove/autolabor-robot-nav/blob/robot_j6m_ws/horizon_challenge.md">项目说明与工作安排 ↗</a></p></div></article>
-  <div class="project-grid" style="margin-top:22px">
-    <article class="project"><span class="tag">MY FOCUS</span><h3>建图与定位</h3><p>围绕激光惯导 SLAM 开展工作，关注定位输出与机器人系统的协同，为后续可复现的算法验证积累工程经验。</p></article>
-    <article class="project"><span class="tag">TEAM SYSTEM</span><h3>国产平台与模块协同</h3><p>团队公开架构包含 NVIDIA 与 J6M 双机通信、传感器接入、导航及交互界面。具体成员工作保留职责归属。</p></article>
-    <article class="project"><span class="tag">PUBLIC PROJECT STATUS</span><h3>功能闭环与量化验证</h3><p>团队工作安排列出系统完善、联调、指标测试及材料整理。公开规划与目标不作为已经完成的性能结果。</p></article>
-  </div>
+  <div class="section-head"><p class="eyebrow">01 / PROJECT</p><h2>无人清扫车</h2></div>
+  <article class="paper"><div class="paper-label">HORIZON<br><strong>J6</strong></div><div><h3>国产计算平台上的建图定位与系统协同</h3><p>参与面向智慧环卫场景的国产系统无人清扫车团队项目，基于已有无人车平台，面向地平线征程 6 系列开展工作。</p><p><strong>个人工作主线：SLAM。</strong> 导航与运动规划由团队其他成员负责。</p><p class="small"><a href="https://github.com/Doribelove/autolabor-robot-nav/tree/robot_j6m_ws">团队仓库 ↗</a> · <a href="https://github.com/Doribelove/autolabor-robot-nav/blob/robot_j6m_ws/horizon_challenge.md">项目说明 ↗</a></p></div></article>
 </section>
-<section id="open-source" class="section wrap open-source"><div class="section-head"><p class="eyebrow">02 / OPEN SOURCE</p><h2>以复现、测试和评审积累贡献。</h2></div><div class="two-col"><div><p><strong>已合并：</strong>evo 轨迹读取单次扫描、RKO-LIO 输入结束时输出已覆盖缓存帧，以及 pytransform3d 的末尾时间查询与异常状态恢复，共四项修复获上游接受。</p><p>截至 2026-10-06：22 项已提交 PR，4 项已合并、10 项待评审（其中 1 项草稿）、8 项已关闭未合并。关闭记录保留为工程尝试，不作为上游已接受成果。</p><p>待评审补丁及关闭尝试分别标注。维护者反馈促使贡献工作转向实际需求、可重现输入与精简补丁，验证条件和历史记录见贡献计划。</p><p><strong>评审与验证：</strong>为 evo 现有时间匹配优化 PR 提供兼容性补丁及三个回归用例，以公开 TUM 轨迹核对匹配结果；为 GLIM 现有编译修复提供三个 fmt 版本的独立验证。范围、源码及回复见<a href="https://github.com/dddd-jh/dddd-jh/blob/main/docs/VALIDATION_REVIEWS.md">评审记录</a>，建议尚未被上游接受，不计入个人新提交 PR 数。</p></div><div class="link-list"><a href="https://github.com/MichaelGrupp/evo/pull/786">evo #786 · 已合并 <span>↗</span></a><a href="https://github.com/koide3/small_gicp/pull/141">small_gicp #141 · 已提交，待评审 <span>↗</span></a><a href="https://github.com/PRBonn/kiss-icp/pull/512">KISS-ICP #512 · 已关闭，未合并 <span>↗</span></a><a href="https://github.com/PRBonn/rko_lio/pull/189">RKO-LIO #189 · 已合并 <span>↗</span></a><a href="https://github.com/PRBonn/kiss-slam/pull/60">KISS-SLAM #60 · 已关闭，未合并 <span>↗</span></a><a href="https://github.com/PRBonn/MapClosures/pull/118">MapClosures #118 · 已关闭，未合并 <span>↗</span></a><a href="https://github.com/koide3/glim/pull/329">GLIM #329 · 已提交，待评审 <span>↗</span></a><a href="https://github.com/koide3/gtsam_points/pull/106">gtsam_points #106 · 已提交，待评审 <span>↗</span></a><a href="https://github.com/foxglove/mcap/pull/1862">MCAP #1862 · 已提交，待评审 <span>↗</span></a><a href="https://github.com/ouster-lidar/ouster-sdk/pull/726">Ouster SDK #726 · 已提交，待评审 <span>↗</span></a><a href="https://github.com/dfki-ric/pytransform3d/pull/385">pytransform3d #385 · 已合并 <span>↗</span></a><a href="https://github.com/dfki-ric/pytransform3d/pull/386">pytransform3d #386 · 已合并 <span>↗</span></a><a href="https://github.com/PRBonn/kiss-icp/pull/513">KISS-ICP #513 · 已关闭，未合并 <span>↗</span></a><a href="https://github.com/foxglove/mcap/pull/1867">MCAP #1867 · 已提交，待评审 <span>↗</span></a><a href="https://github.com/rai-opensource/spatialmath-python/pull/237">SpatialMath #237 · 已提交，待评审 <span>↗</span></a><a href="https://github.com/PRBonn/kiss-icp/pull/514">KISS-ICP #514 · 已关闭，未合并 <span>↗</span></a><a href="https://github.com/artivis/manif/pull/345">manif #345 · 已提交，待评审 <span>↗</span></a><a href="https://github.com/dfki-ric/pytransform3d/pull/387">pytransform3d #387 · 已关闭，未合并 <span>↗</span></a><a href="https://github.com/dfki-ric/pytransform3d/pull/388">pytransform3d #388 · 已关闭，未合并 <span>↗</span></a><a href="https://github.com/PRBonn/kiss-icp/pull/515">KISS-ICP #515 · 已关闭，未合并 <span>↗</span></a><a href="https://github.com/pypose/pypose/pull/411">PyPose #411 · 草稿，待评审 <span>↗</span></a><a href="https://github.com/koide3/gtsam_points/pull/108">gtsam_points #108 · 已提交，待评审 <span>↗</span></a><a href="https://github.com/dddd-jh/dddd-jh/blob/main/docs/CONTRIBUTION_PLAN.md">贡献计划 <span>↗</span></a><a href="https://github.com/pulls?q=is%3Apr+author%3Adddd-jh">公开 PR 记录 <span>↗</span></a></div></div></section>
-<section class="section wrap"><div class="section-head"><p class="eyebrow">03 / DIRECTION</p><h2>机器人 SLAM 与定位</h2></div><div class="two-col"><div><h3>已有基础</h3><p>工程工作基于 Ubuntu 20.04 与 ROS 1，个人工作主线为 SLAM。</p></div><div><h3>拓展方向</h3><p>通过实际贡献拓展 ROS 2、点云配准及 SLAM 工具维护能力。求职聚焦机器人／无人车定位，进一步拓展自动驾驶定位与具身空间感知。</p></div></div></section>
-</main><footer class="footer wrap"><span>董巾航 · Jinhang Dong</span><a href="https://github.com/dddd-jh">GitHub / dddd-jh ↗</a></footer>
+<section id="open-source" class="section wrap">
+  <div class="section-head"><p class="eyebrow">02 / OPEN SOURCE</p><h2>代表性开源贡献</h2></div>
+  <div class="project-grid">
+    <article class="project"><span class="tag">MERGED · TRAJECTORY EVALUATION</span><h3>evo</h3><p>移除 ROS bag 轨迹读取中的重复扫描与额外消息缓存。</p><a class="small" href="https://github.com/MichaelGrupp/evo/pull/786">查看 #786 ↗</a></article>
+    <article class="project"><span class="tag">MERGED · LIDAR / IMU</span><h3>RKO-LIO</h3><p>修复输入结束时遗漏 IMU 已覆盖激光帧的问题。</p><a class="small" href="https://github.com/PRBonn/rko_lio/pull/189">查看 #189 ↗</a></article>
+    <article class="project"><span class="tag">MERGED · TEMPORAL TRANSFORMS</span><h3>pytransform3d</h3><p>修复时序位姿的末尾查询与异常后的时间状态恢复。</p><a class="small" href="https://github.com/dfki-ric/pytransform3d/pull/385">#385 ↗</a> · <a class="small" href="https://github.com/dfki-ric/pytransform3d/pull/386">#386 ↗</a></article>
+  </div>
+  <p class="small" style="margin-top:22px"><a href="https://github.com/pulls?q=is%3Apr+author%3Adddd-jh">查看全部 PR ↗</a></p>
+</section>
+</main>
+<footer class="footer wrap"><span>董巾航 · Jinhang Dong</span><a href="https://github.com/dddd-jh">GitHub ↗</a></footer>
 </body></html>
